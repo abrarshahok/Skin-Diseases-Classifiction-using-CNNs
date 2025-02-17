@@ -1,10 +1,13 @@
-# Skin Disease Classification using CNNs
+## Skin Disease Classification using CNN
 
-## Overview
+In this project i've built a **CNN** to classify skin diseases from images.
 
-This project uses **Convolutional Neural Networks (CNNs)** to classify images of various skin diseases. It is based on the **Skin Disease Image Dataset (Balanced)** from Kaggle.
+**Dataset:** Skin Disease Image Dataset (Balanced)  
+**Accuracy:** 85%  
+**Best F1-Score:** 0.91 (Melanocytic nevus)  
+**Lowest F1-Score:** 0.79 (Actinic keratosis)
 
-- **URL:** [Skin Disease Classifier](https://skin-diseases-classifier.streamlit.app)
+**URL:** [Skin Disease Classifier](https://skin-diseases-classifier.streamlit.app)
 
 ## Dataset
 
