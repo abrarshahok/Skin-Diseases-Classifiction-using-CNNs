@@ -44,14 +44,14 @@ This web application uses a deep learning model to classify skin conditions.
 Simply upload an image of a skin lesion, and the model will analyze it to provide a predicted diagnosis.
 
 ### Supported Skin Conditions:
-1. **Actinic keratosis** - A rough, scaly patch on the skin caused by sun exposure.
-2. **Basal cell carcinoma** - A type of skin cancer that begins in the basal cells.
-3. **Benign keratosis** - A non-cancerous skin growth that often appears as a wart-like lesion.
-4. **Dermatofibroma** - A benign skin nodule commonly found on the legs.
-5. **Melanocytic nevus** - A mole or birthmark that contains pigment-producing cells.
-6. **Melanoma** - A serious form of skin cancer that can spread to other parts of the body.
-7. **Squamous cell carcinoma** - A common form of skin cancer arising from squamous cells.
-8. **Vascular lesion** - An abnormality of blood vessels, often appearing as red or purple skin discoloration.
+1. **Melanoma** - A serious form of skin cancer that can spread to other parts of the body.
+2. **Vascular lesion** - An abnormality of blood vessels, often appearing as red or purple skin discoloration.
+3. **Melanocytic nevus** - A mole or birthmark that contains pigment-producing cells.
+4. **Actinic keratosis** - A rough, scaly patch on the skin caused by sun exposure.
+5. **Squamous cell carcinoma** - A common form of skin cancer arising from squamous cells.
+6. **Benign keratosis** - A non-cancerous skin growth that often appears as a wart-like lesion.
+7. **Basal cell carcinoma** - A type of skin cancer that begins in the basal cells.
+8. **Dermatofibroma** - A benign skin nodule commonly found on the legs.
 """)
 
 # Image Upload
@@ -65,7 +65,7 @@ if uploaded_file is not None:
     # Get prediction
     label, confidence = predict_image(img)
     
-    # Display results
+    # Display results~
     st.success(f"### Prediction: {label}")
     st.info(f"### Confidence: {confidence:.2f}")
     
