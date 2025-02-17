@@ -6,7 +6,7 @@ from tensorflow.keras.preprocessing import image
 from PIL import Image
 
 # Load the trained model
-model = load_model("./model/skin_disease_model_v1.h5")
+model = load_model("./model/skin_cancer_classifier_V1.h5")
 
 # Define class labels
 class_labels = ['Actinic keratosis', 'Basal cell carcinoma', 'Benign keratosis', 'Dermatofibroma', 'Melanocytic nevus', 'Melanoma', 'Squamous cell carcinoma', 'Vascular lesion']
@@ -14,12 +14,12 @@ class_labels = ['Actinic keratosis', 'Basal cell carcinoma', 'Benign keratosis',
 def preprocess_image(img):
     """
     Preprocess the uploaded image to match the input format required by the model.
-    - Resizes the image to (128, 128)
+    - Resizes the image to (64, 64)
     - Converts it to an array
     - Normalizes pixel values between 0 and 1
     - Expands dimensions to fit the model's expected input shape
     """
-    img = img.resize((128, 128))
+    img = img.resize((64, 64))
     img_array = image.img_to_array(img)
     img_array = np.expand_dims(img_array, axis=0)
     img_array /= 255.0  # Normalize pixel values
