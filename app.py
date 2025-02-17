@@ -16,7 +16,7 @@ class_labels = [
     "Actinic keratosis",
     "Squamous cell carcinoma",
     "Benign keratosis",
-    "Basal cell carcinoma",~
+    "Basal cell carcinoma",
     "Dermatofibroma"
 ]
 
