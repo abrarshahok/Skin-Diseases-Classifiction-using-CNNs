@@ -6,10 +6,19 @@ from tensorflow.keras.preprocessing import image
 from PIL import Image
 
 # Load the trained model
-model = load_model("./model/skin_cancer_classifier_V1.h5")
+model = load_model("./model/skin_disease_classifier_V1.h5")
 
 # Define class labels
-class_labels = ['Actinic keratosis', 'Basal cell carcinoma', 'Benign keratosis', 'Dermatofibroma', 'Melanocytic nevus', 'Melanoma', 'Squamous cell carcinoma', 'Vascular lesion']
+class_labels = [
+    "Melanoma",
+    "Vascular lesion",
+    "Melanocytic nevus",
+    "Actinic keratosis",
+    "Squamous cell carcinoma",
+    "Benign keratosis",
+    "Basal cell carcinoma",
+    "Dermatofibroma"
+]
 
 def preprocess_image(img):
     """
